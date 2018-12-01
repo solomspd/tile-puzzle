@@ -2,6 +2,6 @@
 
 void main() {
 	std::cout << "hello world" << std::endl;
-	cout << "boom"
+	std::cout << "boom";
 	system("pause");
 }

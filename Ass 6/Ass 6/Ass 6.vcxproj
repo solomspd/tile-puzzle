@@ -115,8 +115,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\..\..\..\Abdo%27s University work\Fall 2018\Data structures and algorithms\Assignments\Ass 6 Repo 1\Ass 6\Ass 6\main.cpp" />
+    <ClCompile Include="..\..\..\Assignment6_PQ\Assignment6_PQ\PQ.cpp" />
     <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\Assignment6_PQ\Assignment6_PQ\PQ.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
