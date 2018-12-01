@@ -116,10 +116,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\Assignment6_PQ\Assignment6_PQ\PQ.cpp" />
-    <ClCompile Include="main.cpp" />
+    <ClCompile Include="..\..\..\Assignment6_PQ\Assignment6_PQ\PQtest.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\Assignment6_PQ\Assignment6_PQ\PQ.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="puzz.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

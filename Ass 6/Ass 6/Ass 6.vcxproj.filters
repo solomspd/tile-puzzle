@@ -15,10 +15,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp">
+    <ClCompile Include="..\..\..\Assignment6_PQ\Assignment6_PQ\PQ.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\Assignment6_PQ\Assignment6_PQ\PQ.cpp">
+    <ClCompile Include="..\..\..\Assignment6_PQ\Assignment6_PQ\PQtest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -26,5 +26,10 @@
     <ClInclude Include="..\..\..\Assignment6_PQ\Assignment6_PQ\PQ.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="puzz.txt">
+      <Filter>Source Files</Filter>
+    </Text>
   </ItemGroup>
 </Project>
