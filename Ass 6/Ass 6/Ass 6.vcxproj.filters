@@ -21,9 +21,18 @@
     <ClCompile Include="..\..\..\Assignment6_PQ\Assignment6_PQ\PQtest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="PQ.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PQSource.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\Assignment6_PQ\Assignment6_PQ\PQ.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Header.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

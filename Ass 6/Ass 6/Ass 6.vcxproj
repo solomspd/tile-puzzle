@@ -117,9 +117,12 @@
   <ItemGroup>
     <ClCompile Include="..\..\..\Assignment6_PQ\Assignment6_PQ\PQ.cpp" />
     <ClCompile Include="..\..\..\Assignment6_PQ\Assignment6_PQ\PQtest.cpp" />
+    <ClCompile Include="PQ.cpp" />
+    <ClCompile Include="PQSource.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\Assignment6_PQ\Assignment6_PQ\PQ.h" />
+    <ClInclude Include="Header.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="puzz.txt" />
