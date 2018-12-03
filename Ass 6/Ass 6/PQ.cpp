@@ -109,19 +109,23 @@ int PQ<temp>::findH(E<temp> b, int n) //returns manhattan distance (previous itt
 		for (int j = 0; j < n; j++) {
 			if (b.arr[i][j] != 0) {
 				sum_h += abs(((b.arr[i][j] - 1) / n) - i);
-				//cout << abs((b.arr[i][j] - 1) / n) << "	" << i << "	" << b.arr[i][j] << endl;
-				if (b.arr[i][j] % n != 0) {
-					sum_h += abs(((b.arr[i][j] % n) - 1) - j);
-					//cout << abs((b.arr[i][j] % n) - 1) << "	" << j << "	" << b.arr[i][j] << endl;
-				}
-				else {
-					sum_h += abs(n - 1 - j);
-				}
+				sum_h += abs((((b.arr[i][j] - 1) % n)) - j);
 			}
 		}
 	}
 	//cout << sum_h;
 	return sum_h;
+}
+
+template <class temp>
+void PQ<temp>::print(E<temp> in) {
+	for (int i = 0; i < size; i++) {
+		for (int j = 0; j < size; j++) {
+			cout << in.arr[i][j] << " ";
+		}
+		cout << endl;
+	}
+	cout << endl;
 }
 
 //template <class temp>
@@ -159,6 +163,7 @@ template <class temp>
 void PQ<temp>::insert(E<temp> s, int m)
 {
 	if (!optimize(s)) {////optimization to make sure we didnt add node to PQ previouisly
+		cout << endl << endl;
 		E<temp> v = s;
 		v.arr = s.arr;
 		v.g = m;
