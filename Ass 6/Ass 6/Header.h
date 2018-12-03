@@ -29,6 +29,9 @@ private: //find index i and index j of value x in the borad b
 	int N;	      //index of last element in the array
 	int itemMin;  //Very small value at index 0
 
+	bool optimize(E<temp>); //required optimization as defined in PDF
+	bool is_equal(E<temp>, E<temp>);
+
 	void upheap(int k);
 	void downheap(int k);
 };
