@@ -58,12 +58,6 @@ int main()
 
 		if (puzzle.h == 0) {
 			check = false;
-			/*for (int i = 0; i < n; i++) {
-				for (int j = 0; j < n; j++) {
-					cout << "  " << puzzle.arr[i][j];
-				}
-				cout << endl;
-			}*/
 			cout << "Moves:  " << puzzle.g << endl;
 		}
 		else {

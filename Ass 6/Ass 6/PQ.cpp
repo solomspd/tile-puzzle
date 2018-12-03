@@ -92,8 +92,8 @@ bool PQ<temp>::is_equal(E<temp> in_1, E<temp> in_2) {
 
 template <class temp>
 bool PQ<temp>::optimize(E<temp> in) {
-	cout << N;
-	for (int i = 0; i < (N-1); i++) {
+	//cout << N;
+	for (int i = 1; i < N-1; i++) {
 		if (is_equal(a[i], in)) {
 			return true;
 		}
@@ -120,7 +120,7 @@ int PQ<temp>::findH(E<temp> b, int n) //returns manhattan distance (previous itt
 			}
 		}
 	}
-	cout << sum_h;
+	//cout << sum_h;
 	return sum_h;
 }
 
@@ -158,17 +158,17 @@ int PQ<temp>::findH(E<temp> b, int n) //returns manhattan distance (previous itt
 template <class temp>
 void PQ<temp>::insert(E<temp> s, int m)
 {
-	//if (!optimize(s)) { //optimization to make sure we didnt add node to PQ previouisly
+	if (!optimize(s)) {////optimization to make sure we didnt add node to PQ previouisly
 		E<temp> v = s;
 		v.arr = s.arr;
 		v.g = m;
-		//v.h = distance(v.arr);
 		v.h = findH(v, size);
 		v.sum = v.g + v.h;
+		//if (!optimize(s)) {
 		N++;
 		a[N] = v;
 		upheap(N);
-	//}
+	}
 }
 template <class temp>
 void PQ<temp>::upheap(int k)
