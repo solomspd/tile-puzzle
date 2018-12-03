@@ -36,48 +36,6 @@ PQ<temp>::PQ(temp **bArray, int n) //Constructor
 	insert(initial, 0);
 }
 
-// Insert element (v) in the heap and adjust heap
-//find index i and index j of value x in the borad b
-//template <class temp>
-//void PQ<temp>::findIJ(E<temp> b, int x, int & i, int & j, int n)
-//{
-//	i = 0; j = 0;
-//	int r, c;
-//	for (r = 0; r < n; r++)
-//	{
-//		for (c = 0; c < n; c++)
-//		{
-//			if (b.arr[r][c] == x)
-//			{
-//				i = r;
-//				j = c;
-//			}
-//		}
-//	}
-//}
-//template<class temp>
-//int PQ<temp>::distance(temp **Array)
-//{
-//
-//	int dist = 0;
-//	for (int i = 0; i < size; i++)
-//	{
-//		for (int j = 0; j < size; j++)
-//			if (Array[i][j] != 0)
-//			{
-//				int xcord = (Array[i][j] - 1) / size;
-//				int ycord = (Array[i][j] - 1) % size;
-//
-//				int 	t = (abs(i - xcord)) + (abs(j - ycord));
-//				dist = dist + t;
-//			}
-//	}
-//
-//	return dist;
-//}
-
-//find sum of all distances
-
 template <class temp>
 bool PQ<temp>::is_equal(E<temp> in_1, E<temp> in_2) {
 	for (int i = 0; i < size; i++) {
@@ -128,42 +86,10 @@ void PQ<temp>::print(E<temp> in) {
 	cout << endl;
 }
 
-//template <class temp>
-//int PQ<temp>::findH(E<temp> b, int n)
-//{
-//	int difX, difY;
-//	int s = 0;
-//	int i, j;
-//	for (i = 0; i < n; i++)
-//	{
-//		for (j = 0; j < n; j++)
-//		{
-//			generating values from 1 up to n*n: 1 2 3 4 5 ...
-//			int value = j + n * i + 1;
-//			cout << value;
-//			if (value == n * n) //ignore value n*n
-//				break;
-//
-//			int iC = 0, jC = 0; //i and j position of current value
-//								find index i and index j of current value (its current position)
-//			findIJ(b, value, iC, jC, n);
-//			int iG = (value - 1) / n;   //Goal i position
-//			int jG = (value - 1) % n;   //Goal j position
-//										
-//			difX = abs(iC - iG); //find horizontal distance from its goal position
-//			difY = abs(jC - jG); //find vertical distance
-//
-//			s = s + difX + difY;
-//		}
-//	}
-//	return s;
-//}
-
 template <class temp>
 void PQ<temp>::insert(E<temp> s, int m)
 {
 	if (!optimize(s)) {////optimization to make sure we didnt add node to PQ previouisly
-		cout << endl << endl;
 		E<temp> v = s;
 		v.arr = s.arr;
 		v.g = m;

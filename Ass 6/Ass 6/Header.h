@@ -22,8 +22,6 @@ public:
 
 private: //find index i and index j of value x in the borad b
 	int size;
-	int distance(temp**);
-	void findIJ(E<temp> b, int x, int & iC, int & jC, int n);
 	int findH(E<temp> b, int n); //find sum of all distances
 	E<temp> *a;         //Heap array
 	int N;	      //index of last element in the array
