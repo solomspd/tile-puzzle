@@ -1,3 +1,4 @@
+//Helped by Seif Eldin Hani
 #include "header.h"
 #include "PQ.cpp"
 #include <iostream>
@@ -18,7 +19,7 @@ void createdup(E<int> & x, E<int>& y, int n)
 		}
 	}
 }
-
+//Prints the contents of the array(puzzle)
 void print(E<int> in, int n) {
 	for (int i = 0; i < n; i++) {
 		for (int j = 0; j < n; j++) {
@@ -48,6 +49,7 @@ int main()
 		}
 
 	}
+	ifile.close();
 	//}
 	PQ<int> H(bArray, n);
 	while (check) {
@@ -78,10 +80,10 @@ int main()
 					}
 					if (i < n - 1)
 					{
-						if (puzzle.arr[i + 1][j] == 0)
+						if (puzzle.arr[i + 1][j] == 0) //If the tile below the present one
 						{
-							E<int>duplicate;
-							createdup(duplicate, puzzle, n);
+							E<int>duplicate; //Create duplicate to add the puzzle
+							createdup(duplicate, puzzle, n); //This duplicate is the one we will edit in as we cannot edit in an already removed puzzle
 							swap(duplicate.arr[i + 1][j], duplicate.arr[i][j]); //move down
 							H.insert(duplicate, movements);
 							//print(duplicate, n);
