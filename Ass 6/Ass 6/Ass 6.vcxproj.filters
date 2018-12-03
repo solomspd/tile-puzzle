@@ -15,21 +15,24 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="PQ.cpp">
+    <Text Include="puzz.txt">
       <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="PQSource.cpp">
+    </Text>
+    <Text Include="..\..\..\..\..\..\..\Abdo%27s University work\Fall 2018\Data structures and algorithms\Assignments\Ass 6 Repo 1\Ass 6\Ass 6\readme.txt">
       <Filter>Source Files</Filter>
-    </ClCompile>
+    </Text>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Header.h">
+    <ClInclude Include="..\..\..\..\..\..\..\Abdo%27s University work\Fall 2018\Data structures and algorithms\Assignments\Ass 6 Repo 1\Ass 6\Ass 6\Header.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="puzz.txt">
+    <ClCompile Include="..\..\..\..\..\..\..\Abdo%27s University work\Fall 2018\Data structures and algorithms\Assignments\Ass 6 Repo 1\Ass 6\Ass 6\PQ.cpp">
       <Filter>Source Files</Filter>
-    </Text>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Abdo%27s University work\Fall 2018\Data structures and algorithms\Assignments\Ass 6 Repo 1\Ass 6\Ass 6\PQSource.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

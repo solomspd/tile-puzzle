@@ -76,7 +76,12 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>D:\Abdo\Abdo%27s University work\Fall 2018\Data structures and algorithms\Assignments\Ass 6 Repo 1\Ass 6\Ass 6\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>SFML_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>D:\Abdo\Abdo%27s University work\Fall 2018\Data structures and algorithms\Assignments\Ass 6 Repo 1\Ass 6\Ass 6\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
@@ -84,7 +89,12 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>D:\Abdo\Abdo%27s University work\Fall 2018\Data structures and algorithms\Assignments\Ass 6 Repo 1\Ass 6\Ass 6\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>SFML_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>D:\Abdo\Abdo%27s University work\Fall 2018\Data structures and algorithms\Assignments\Ass 6 Repo 1\Ass 6\Ass 6\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -94,10 +104,13 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>D:\Abdo\Abdo%27s University work\Fall 2018\Data structures and algorithms\Assignments\Ass 6 Repo 1\Ass 6\Ass 6\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>D:\Abdo\Abdo%27s University work\Fall 2018\Data structures and algorithms\Assignments\Ass 6 Repo 1\Ass 6\Ass 6\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sfml-graphics.lib;sfml-window.lib;sfml-system.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -108,21 +121,25 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>D:\Abdo\Abdo%27s University work\Fall 2018\Data structures and algorithms\Assignments\Ass 6 Repo 1\Ass 6\Ass 6\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>D:\Abdo\Abdo%27s University work\Fall 2018\Data structures and algorithms\Assignments\Ass 6 Repo 1\Ass 6\Ass 6\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sfml-graphics.lib;sfml-window.lib;sfml-system.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="PQ.cpp" />
-    <ClCompile Include="PQSource.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Header.h" />
-  </ItemGroup>
-  <ItemGroup>
+    <Text Include="..\..\..\..\..\..\..\Abdo%27s University work\Fall 2018\Data structures and algorithms\Assignments\Ass 6 Repo 1\Ass 6\Ass 6\readme.txt" />
     <Text Include="puzz.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\..\..\Abdo%27s University work\Fall 2018\Data structures and algorithms\Assignments\Ass 6 Repo 1\Ass 6\Ass 6\Header.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\..\..\Abdo%27s University work\Fall 2018\Data structures and algorithms\Assignments\Ass 6 Repo 1\Ass 6\Ass 6\PQ.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\Abdo%27s University work\Fall 2018\Data structures and algorithms\Assignments\Ass 6 Repo 1\Ass 6\Ass 6\PQSource.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
