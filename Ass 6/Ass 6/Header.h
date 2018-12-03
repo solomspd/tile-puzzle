@@ -31,6 +31,7 @@ private: //find index i and index j of value x in the borad b
 
 	bool optimize(E<temp>); //required optimization as defined in PDF
 	bool is_equal(E<temp>, E<temp>);
+	void print(E<temp>);
 
 	void upheap(int k);
 	void downheap(int k);
