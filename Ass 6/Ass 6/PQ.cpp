@@ -93,7 +93,7 @@ bool PQ<temp>::is_equal(E<temp> in_1, E<temp> in_2) {
 template <class temp>
 bool PQ<temp>::optimize(E<temp> in) {
 	//cout << N;
-	for (int i = 1; i < N-1; i++) {
+	for (int i = 1; i <= N; i++) {
 		if (is_equal(a[i], in)) {
 			return true;
 		}
